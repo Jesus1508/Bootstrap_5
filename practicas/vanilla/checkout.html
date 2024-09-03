@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../css/bootstrap.min.css">
+	<title>Página de Pago</title>
+</head>
+<body class="bg-light">
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col p-5 text-center">
+				<h5>Formulario de Pago</h5>
+				<p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, ipsam amet! Ipsum doloribus molestiae ducimus.</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12 col-md-8">
+				<h4 class="mb-3">Dirección de Envío</h4>
+				<form action="">
+					<div class="row">
+						<div class="col-12 col-sm-6 mb-3">
+							<label for="nombre" class="form-label">Nombre</label>
+							<input type="text" class="form-control" id="nombre" name="nombre">
+						</div>
+
+						<div class="col-12 col-sm-6 mb-3">
+							<label for="email" class="form-label">Correo</label>
+							<input type="email" class="form-control" id="email" name="email">
+						</div>
+					</div>
+
+					<div class="row mb-3">
+						<div class="col">
+							<label for="usuario" class="form-label">Usuario</label>
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<span class="input-group-text">@</span>
+								</div>
+								<input type="text" id="usuario" name="usuario" class="form-control" placeholder="usuario">
+							</div>
+						</div>
+					</div>
+
+					<div class="row mb-3">
+						<div class="col">
+							<label for="correo" class="form-label">Correo <span class="text-muted">(Opcional)</span></label>
+							<input type="email" class="form-control" placeholder="nombre@correo.com" name="correo" id="correo">
+						</div>
+					</div>
+
+					<div class="row mb-3">
+						<div class="col">
+							<label class="form-label" for="direccion">Dirección</label>
+							<input type="text" class="form-control" placeholder="123 Calle Principal" name="direccion" id="direccion">
+						</div>
+					</div>
+
+					<div class="row mb-3">
+						<div class="col">
+							<label class="form-label" for="direccion2">Dirección 2</label>
+							<input type="text" class="form-control" placeholder="Interior o infomación" name="direccion2" id="direccion2">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-sm-4 mb-3">
+							<label for="pais" class="form-label">Páis</label>
+							<select name="pais" id="pais" class="form-select">
+								<option value="">Seleccionar un Páis</option>
+								<option value="mexico">México</option>
+								<option value="espana">España</option>
+								<option value="colombia">Colombia</option>
+							</select>
+						</div>
+						<div class="col-12 col-sm-4 mb-3">
+							<label for="estado" class="form-label">Estado</label>
+							<select name="estado" id="estado" class="form-select">
+								<option value="">Seleccionar un estado</option>
+								<option value="mexico">México</option>
+								<option value="espana">España</option>
+								<option value="colombia">Colombia</option>
+							</select>
+						</div>
+						<div class="col-12 col-sm-4 mb-3">
+							<label for="codigo-postal" class="form-label">Código Postal</label>
+							<input type="text" name="codigo-postal" id="codigo-postal" class="form-control">
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="row mb-3">
+						<div class="col-12">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="misma-direccion">
+								<label for="misma-direccion" class="form-label">Enviar a la misma direccion de fcaturación</label>
+							</div>
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input" id="guardar-informacion">
+								<label for="guardar-informacion" class="form-label">Guardar información para la siguiente compra</label>
+							</div>
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="row mb-3">
+						<div class="col-12">
+							<div class="form-check">
+								<input type="radio" name="metodo-pago" class="form-check-input" id="tarjeta-credito">
+								<label for="tarjeta-credito" class="form-check-label">Tarjeta de Crédito</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" name="metodo-pago" class="form-check-input" id="tarjeta-debito">
+								<label for="tarjeta-debito" class="form-check-label">Tarjeta de Debito</label>
+							</div>
+							<div class="form-check">
+								<input type="radio" name="metodo-pago" class="form-check-input" id="paypal">
+								<label for="paypal" class="form-check-label">PayPal</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="row mb-3">
+						<div class="col-12 col-sm-6 mb-3">
+							<label for="nombre-tarjeta" class="form-label">Nombre en la tarjeta</label>
+							<input type="text" name="nombre-tarjeta" class="form-control">
+							<small class="text-muted">Nombre completo como se muestra en la tarjeta</small>
+						</div>
+
+						<div class="col-12 col-sm-6 mb-3">
+							<label for="numero-tarjeta" class="form-label">Numero de tarjeta</label>
+							<input type="text" name="numero-tarjeta" class="form-control">
+						</div>
+					</div>
+
+					<div class="row mb-3">
+						<div class="col-6 col-sm-4 mb3">
+							<label for="tarjeta-expiracion" class="form-label">Expiracion</label>
+							<input type="text" id="tarjeta-expiracion" class="form-control">
+						</div>
+
+						<div class="col-6 col-sm-4 mb3">
+							<label for="tarjeta-ccv" class="form-label">CCV</label>
+							<input type="text" id="tarjeta-ccv" class="form-control">
+						</div>
+					</div>
+
+					<hr class="mb-4">
+
+					<input type="submit" value="Continuar al pago" class="btn btn-block btn-lg btn-primary">
+				</form>
+			</div>
+
+			<div class="col-12 col-md-4">
+				<h4 class="mb-3 d-flex justify-content-between align-items-center">
+					<span class="text-muted">Tu carrito</span>
+					<span class="badge bg-secondary rounded-pill">3</span>
+				</h4>
+
+				<ul class="list-group mb-3">
+					<li class="list-group-item d-flex justify-content-between">
+						<div>
+							<h6 class="my-0">Nombre del Producto</h6>
+							<small class="text-muted">Pequeña descripción</small>
+						</div>
+						<span class="text-muted">$12</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between">
+						<div>
+							<h6 class="my-0">Segundo Producto</h6>
+							<small class="text-muted">Pequeña descripción</small>
+						</div>
+						<span class="text-muted">$8</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between">
+						<div>
+							<h6 class="my-0">Tercer Producto</h6>
+							<small class="text-muted">Pequeña descripción</small>
+						</div>
+						<span class="text-muted">$5</span>
+					</li>
+					<li class="list-group-item d-flex justify-content-between">
+						<div class="text-success">
+							<h6 class="my-0">Código de descuento</h6>
+							<small class="text-success">CUPON EJEMPLO</small>
+						</div>
+						<span class="text-success">$-5</span>
+					</li>
+
+					<li class="list-group-item d-flex justify-content-between">
+						<span>Total(USD)</span>
+						<strong>$20</strong>
+					</li>
+				</ul>
+
+				<form action="" class="card p-2">
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="CUPON">
+						<div class="input-group-append">
+							<button class="btn btn-secondary">Canjear</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<footer class="row my-5 py-5 text-muted text-center text-small">
+			<div class="col">
+				<p class="mb-1">© 2024-2025 Jesus Solis</p>
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<a href="#">Privacidad</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#">Términos y Condiciones</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="#">Soporte</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+
+	
+	<script src="../../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
